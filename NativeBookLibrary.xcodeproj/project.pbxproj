@@ -23,6 +23,14 @@
 		9FB9B37A27D1450200BBF35A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9FB9B37927D1450200BBF35A /* FirebaseFirestore */; };
 		9FB9B37D27D1455700BBF35A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9FB9B37C27D1455700BBF35A /* FirebaseAuth */; };
 		9FB9B37F27D1455700BBF35A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9FB9B37E27D1455700BBF35A /* FirebaseFirestore */; };
+		9FBE400C27DA98C60054B7A1 /* OnlineBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE400B27DA98C60054B7A1 /* OnlineBook.swift */; };
+		9FBE400D27DA98C60054B7A1 /* OnlineBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE400B27DA98C60054B7A1 /* OnlineBook.swift */; };
+		9FBE401127DB69E90054B7A1 /* OnlineBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401027DB69E90054B7A1 /* OnlineBooks.swift */; };
+		9FBE401227DB69E90054B7A1 /* OnlineBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401027DB69E90054B7A1 /* OnlineBooks.swift */; };
+		9FBE401D27DB90D10054B7A1 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401C27DB90D10054B7A1 /* ContentViewModel.swift */; };
+		9FBE401E27DB90D10054B7A1 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401C27DB90D10054B7A1 /* ContentViewModel.swift */; };
+		9FBE402027DB97ED0054B7A1 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401F27DB97ED0054B7A1 /* BookView.swift */; };
+		9FBE402127DB97ED0054B7A1 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401F27DB97ED0054B7A1 /* BookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,11 @@
 		9FB9B35B27D1429100BBF35A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		9FB9B35D27D1429100BBF35A /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		9FB9B37327D142EA00BBF35A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9FBE400B27DA98C60054B7A1 /* OnlineBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineBook.swift; sourceTree = "<group>"; };
+		9FBE401027DB69E90054B7A1 /* OnlineBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineBooks.swift; sourceTree = "<group>"; };
+		9FBE401C27DB90D10054B7A1 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		9FBE401F27DB97ED0054B7A1 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		9FBE402227DBA54F0054B7A1 /* NativeBookLibrary--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NativeBookLibrary--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +110,7 @@
 		9FB9B33127D1429000BBF35A = {
 			isa = PBXGroup;
 			children = (
+				9FBE402227DBA54F0054B7A1 /* NativeBookLibrary--iOS--Info.plist */,
 				9FB9B37327D142EA00BBF35A /* GoogleService-Info.plist */,
 				9FB9B33627D1429000BBF35A /* Shared */,
 				9FB9B34527D1429100BBF35A /* macOS */,
@@ -110,8 +124,11 @@
 		9FB9B33627D1429000BBF35A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				9FB9B33727D1429000BBF35A /* NativeBookLibraryApp.swift */,
 				9FB9B33827D1429000BBF35A /* ContentView.swift */,
+				9FBE401F27DB97ED0054B7A1 /* BookView.swift */,
+				9FBE401C27DB90D10054B7A1 /* ContentViewModel.swift */,
+				9FB9B33727D1429000BBF35A /* NativeBookLibraryApp.swift */,
+				9FBE400F27DB69A60054B7A1 /* Model */,
 				9FB9B33927D1429100BBF35A /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -159,6 +176,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FBE400F27DB69A60054B7A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FBE400B27DA98C60054B7A1 /* OnlineBook.swift */,
+				9FBE401027DB69E90054B7A1 /* OnlineBooks.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +276,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					9FB9B33D27D1429100BBF35A = {
 						CreatedOnToolsVersion = 13.1;
@@ -334,6 +360,10 @@
 			files = (
 				9FB9B36127D1429100BBF35A /* ContentView.swift in Sources */,
 				9FB9B35F27D1429100BBF35A /* NativeBookLibraryApp.swift in Sources */,
+				9FBE401D27DB90D10054B7A1 /* ContentViewModel.swift in Sources */,
+				9FBE400C27DA98C60054B7A1 /* OnlineBook.swift in Sources */,
+				9FBE401127DB69E90054B7A1 /* OnlineBooks.swift in Sources */,
+				9FBE402027DB97ED0054B7A1 /* BookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +373,10 @@
 			files = (
 				9FB9B36227D1429100BBF35A /* ContentView.swift in Sources */,
 				9FB9B36027D1429100BBF35A /* NativeBookLibraryApp.swift in Sources */,
+				9FBE401E27DB90D10054B7A1 /* ContentViewModel.swift in Sources */,
+				9FBE400D27DA98C60054B7A1 /* OnlineBook.swift in Sources */,
+				9FBE401227DB69E90054B7A1 /* OnlineBooks.swift in Sources */,
+				9FBE402127DB97ED0054B7A1 /* BookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +535,8 @@
 				DEVELOPMENT_TEAM = 5337HLKKD5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NativeBookLibrary--iOS--Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access requried to allow scanning of books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -531,6 +567,8 @@
 				DEVELOPMENT_TEAM = 5337HLKKD5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NativeBookLibrary--iOS--Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access requried to allow scanning of books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
