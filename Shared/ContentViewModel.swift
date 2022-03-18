@@ -11,8 +11,17 @@ import Foundation
 class ContentViewModel: ObservableObject {
     @Published var selectedBook: OnlineBook?
 
+    var scannedValue: String? {
+        didSet {
+            guard let scannedValue = scannedValue else { return }
+            
+            Task() {
+                await loadBook(ISBN: scannedValue)
+            }
+        }
+    }
+
     private static let baseURL = "https://www.googleapis.com/books/v1"
-    private static let bookISBN = "978-1-80323-445-8"
 
     func loadBook(ISBN: String) async {
         guard let url = URL(string: "\(Self.baseURL)/volumes?q=isbn:\(ISBN)") else { return }

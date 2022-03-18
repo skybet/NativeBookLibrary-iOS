@@ -11,7 +11,7 @@ struct OnlineBook: Identifiable {
     let id: String
     let eTag: String
     let title: String
-    let subtitle: String
+    let subtitle: String?
     let description: String
     let pageCount: Int
     let thumbnailURL: URL?
@@ -36,7 +36,7 @@ extension OnlineBook: Decodable {
 
         let details = try values.nestedContainer(keyedBy: DetailsCodingKeys.self, forKey: .details)
         title = try details.decode(String.self, forKey: .title)
-        subtitle = try details.decode(String.self, forKey: .subtitle)
+        subtitle = try details.decodeIfPresent(String.self, forKey: .subtitle)
         description = try details.decode(String.self, forKey: .description)
 
         pageCount = try details.decodeIfPresent(Int.self, forKey: .pageCount) ?? 0

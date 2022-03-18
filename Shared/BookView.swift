@@ -21,8 +21,10 @@ struct BookView: View {
                     Text(book.title)
                         .font(.title)
 
-                    Text(book.subtitle)
-                        .font(.subheadline)
+                    if let subtitle = book.subtitle {
+                        Text(subtitle)
+                            .font(.subheadline)
+                    }
 
                     if let ISBN = book.ISBN {
                         Text("ISBN: \(ISBN)")
