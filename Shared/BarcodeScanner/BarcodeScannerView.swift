@@ -8,6 +8,7 @@
 import SwiftUI
 import AVFoundation
 
+#if canImport(UIKit)
 struct BarcodeScannerView: UIViewRepresentable {
     var supportedBarcodeTypes: [AVMetadataObject.ObjectType] = [.ean8, .ean13]
     typealias UIViewType = CameraPreview
@@ -116,3 +117,4 @@ struct BarcodeScannerView: UIViewRepresentable {
         uiView.setContentHuggingPriority(.defaultLow, for: .horizontal)
     }
 }
+#endif

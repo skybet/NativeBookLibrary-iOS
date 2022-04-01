@@ -8,7 +8,7 @@
 import Foundation
 
 @MainActor
-class ContentViewModel: ObservableObject {
+class LibraryViewModel: ObservableObject {
     @Published var selectedBook: OnlineBook?
 
     var scannedValue: String? {

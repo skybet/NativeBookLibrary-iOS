@@ -5,6 +5,7 @@
 //  Created by Matthew Gallagher on 11/03/2022.
 //
 
+#if canImport(UIKit)
 import UIKit
 import AVFoundation
 
@@ -59,3 +60,4 @@ class CameraPreview: UIView {
         delegate?.onSimulateScanning()
     }
 }
+#endif

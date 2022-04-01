@@ -11,4 +11,3 @@ extension Color {
     static let barcodeFinderSearching = Color("BarcodeFinderSearching")
     static let barcodeFinderFound = Color("BarcodeFinderFound")
 }
-

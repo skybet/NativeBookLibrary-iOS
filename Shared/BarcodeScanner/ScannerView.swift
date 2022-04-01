@@ -20,6 +20,7 @@ struct ScannerView: View {
             Text("Scan the books barcode")
                 .font(.headline)
 
+#if canImport(UIKit)
             BarcodeScannerView()
                 .found(r: viewModel.foundBarcode)
                 .torchLight(isOn: viewModel.isTorchOn)
@@ -36,6 +37,7 @@ struct ScannerView: View {
                         .frame(height: 0.5)
                 }
                 .aspectRatio(1.5, contentMode: .fit)
+#endif
 
             Button(action: {
                 viewModel.isTorchOn.toggle()

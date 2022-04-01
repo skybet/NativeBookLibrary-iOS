@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F433BAE27E8C5FE00824A65 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F433BAD27E8C5FE00824A65 /* KeychainItem.swift */; };
+		9F433BAF27E8C5FE00824A65 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F433BAD27E8C5FE00824A65 /* KeychainItem.swift */; };
+		9F433BB627E9D55400824A65 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62104B27E4CD0A005F94BB /* Color.swift */; };
+		9F4F76BD27F1AF8900A20E48 /* FirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76BC27F1AF8900A20E48 /* FirebaseUser.swift */; };
+		9F4F76BE27F1AF8900A20E48 /* FirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76BC27F1AF8900A20E48 /* FirebaseUser.swift */; };
+		9F4F76C027F1B3C500A20E48 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76BF27F1B3C500A20E48 /* SignInView.swift */; };
+		9F4F76C127F1B3C500A20E48 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76BF27F1B3C500A20E48 /* SignInView.swift */; };
+		9F4F76C727F6142700A20E48 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76C627F6142700A20E48 /* AppState.swift */; };
+		9F4F76C827F6142700A20E48 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76C627F6142700A20E48 /* AppState.swift */; };
+		9F4F76CA27F6DBC100A20E48 /* ScannerCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76C927F6DBC100A20E48 /* ScannerCameraDelegate.swift */; };
+		9F4F76CB27F6DBC100A20E48 /* ScannerCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76C927F6DBC100A20E48 /* ScannerCameraDelegate.swift */; };
+		9F4F76CD27F6DD2100A20E48 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 9F4F76CC27F6DD2100A20E48 /* FirebaseFirestoreSwift-Beta */; };
+		9F4F76CF27F6DD2900A20E48 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 9F4F76CE27F6DD2900A20E48 /* FirebaseFirestoreSwift-Beta */; };
+		9F4F76D127F7337600A20E48 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D027F7337600A20E48 /* SplashView.swift */; };
+		9F4F76D227F7337600A20E48 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D027F7337600A20E48 /* SplashView.swift */; };
+		9F4F76D427F7340500A20E48 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D327F7340500A20E48 /* Image.swift */; };
+		9F4F76D527F7340500A20E48 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D327F7340500A20E48 /* Image.swift */; };
+		9F5221E727EDF59F00B17E0F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5221E627EDF59F00B17E0F /* LibraryView.swift */; };
+		9F5221E827EDF59F00B17E0F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5221E627EDF59F00B17E0F /* LibraryView.swift */; };
+		9F5221EA27EE006A00B17E0F /* SignInWithAppleFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5221E927EE006900B17E0F /* SignInWithAppleFirebase.swift */; };
+		9F5221EB27EE006A00B17E0F /* SignInWithAppleFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5221E927EE006900B17E0F /* SignInWithAppleFirebase.swift */; };
 		9F62104C27E4CD0A005F94BB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62104B27E4CD0A005F94BB /* Color.swift */; };
 		9FB9B35027D1429100BBF35A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB9B34F27D1429100BBF35A /* Tests_iOS.swift */; };
 		9FB9B35227D1429100BBF35A /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB9B35127D1429100BBF35A /* Tests_iOSLaunchTests.swift */; };
@@ -36,10 +57,8 @@
 		9FBE401527DB80480054B7A1 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401327DB80480054B7A1 /* BarcodeScannerView.swift */; };
 		9FBE401727DB80790054B7A1 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401627DB80790054B7A1 /* CameraPreview.swift */; };
 		9FBE401827DB80790054B7A1 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401627DB80790054B7A1 /* CameraPreview.swift */; };
-		9FBE401A27DB80F90054B7A1 /* ScannerCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401927DB80F90054B7A1 /* ScannerCameraDelegate.swift */; };
-		9FBE401B27DB80F90054B7A1 /* ScannerCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401927DB80F90054B7A1 /* ScannerCameraDelegate.swift */; };
-		9FBE401D27DB90D10054B7A1 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401C27DB90D10054B7A1 /* ContentViewModel.swift */; };
-		9FBE401E27DB90D10054B7A1 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401C27DB90D10054B7A1 /* ContentViewModel.swift */; };
+		9FBE401D27DB90D10054B7A1 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401C27DB90D10054B7A1 /* LibraryViewModel.swift */; };
+		9FBE401E27DB90D10054B7A1 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401C27DB90D10054B7A1 /* LibraryViewModel.swift */; };
 		9FBE402027DB97ED0054B7A1 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401F27DB97ED0054B7A1 /* BookView.swift */; };
 		9FBE402127DB97ED0054B7A1 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE401F27DB97ED0054B7A1 /* BookView.swift */; };
 		9FF3675F27E4DE96003FD5F2 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3675E27E4DE96003FD5F2 /* Haptics.swift */; };
@@ -64,6 +83,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F433B9F27E77B5B00824A65 /* NativeBookLibrary (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NativeBookLibrary (iOS).entitlements"; sourceTree = "<group>"; };
+		9F433BAD27E8C5FE00824A65 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		9F4F76BC27F1AF8900A20E48 /* FirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUser.swift; sourceTree = "<group>"; };
+		9F4F76BF27F1B3C500A20E48 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		9F4F76C627F6142700A20E48 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9F4F76C927F6DBC100A20E48 /* ScannerCameraDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerCameraDelegate.swift; sourceTree = "<group>"; };
+		9F4F76D027F7337600A20E48 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		9F4F76D327F7340500A20E48 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		9F5221E627EDF59F00B17E0F /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		9F5221E927EE006900B17E0F /* SignInWithAppleFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleFirebase.swift; sourceTree = "<group>"; };
 		9F62104B27E4CD0A005F94BB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9FB9B33727D1429000BBF35A /* NativeBookLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBookLibraryApp.swift; sourceTree = "<group>"; };
 		9FB9B33827D1429000BBF35A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,8 +113,7 @@
 		9FBE401027DB69E90054B7A1 /* OnlineBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineBooks.swift; sourceTree = "<group>"; };
 		9FBE401327DB80480054B7A1 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 		9FBE401627DB80790054B7A1 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
-		9FBE401927DB80F90054B7A1 /* ScannerCameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScannerCameraDelegate.swift; path = ../../../../../../Documents/ScannerCameraDelegate.swift; sourceTree = "<group>"; };
-		9FBE401C27DB90D10054B7A1 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		9FBE401C27DB90D10054B7A1 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		9FBE401F27DB97ED0054B7A1 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		9FBE402227DBA54F0054B7A1 /* NativeBookLibrary--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NativeBookLibrary--iOS--Info.plist"; sourceTree = "<group>"; };
 		9FF3675E27E4DE96003FD5F2 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
@@ -96,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4F76CD27F6DD2100A20E48 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				9FB9B37827D1450200BBF35A /* FirebaseAuth in Frameworks */,
 				9FB9B37A27D1450200BBF35A /* FirebaseFirestore in Frameworks */,
 			);
@@ -105,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4F76CF27F6DD2900A20E48 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				9FB9B37D27D1455700BBF35A /* FirebaseAuth in Frameworks */,
 				9FB9B37F27D1455700BBF35A /* FirebaseFirestore in Frameworks */,
 			);
@@ -127,10 +157,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F4F76B727F1AF6000A20E48 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9F5221E927EE006900B17E0F /* SignInWithAppleFirebase.swift */,
+				9F4F76BB27F1AF8200A20E48 /* Model */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		9F4F76BB27F1AF8200A20E48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F4F76BC27F1AF8900A20E48 /* FirebaseUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F5221E227EDF53300B17E0F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9F4F76C627F6142700A20E48 /* AppState.swift */,
+				9FB9B33727D1429000BBF35A /* NativeBookLibraryApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9F5221E327EDF53900B17E0F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9FF3675E27E4DE96003FD5F2 /* Haptics.swift */,
+				9F433BAD27E8C5FE00824A65 /* KeychainItem.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9F5221E427EDF54200B17E0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FBE401F27DB97ED0054B7A1 /* BookView.swift */,
+				9FB9B33827D1429000BBF35A /* ContentView.swift */,
+				9F5221E627EDF59F00B17E0F /* LibraryView.swift */,
+				9FBE401C27DB90D10054B7A1 /* LibraryViewModel.swift */,
+				9F4F76BF27F1B3C500A20E48 /* SignInView.swift */,
+				9F4F76D027F7337600A20E48 /* SplashView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F5221E527EDF56500B17E0F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FB9B33927D1429100BBF35A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		9F62104A27E4CD00005F94BB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				9F62104B27E4CD0A005F94BB /* Color.swift */,
+				9F4F76D327F7340500A20E48 /* Image.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -138,6 +225,7 @@
 		9FB9B33127D1429000BBF35A = {
 			isa = PBXGroup;
 			children = (
+				9F433B9F27E77B5B00824A65 /* NativeBookLibrary (iOS).entitlements */,
 				9FBE402227DBA54F0054B7A1 /* NativeBookLibrary--iOS--Info.plist */,
 				9FB9B33627D1429000BBF35A /* Shared */,
 				9FB9B34527D1429100BBF35A /* macOS */,
@@ -151,15 +239,14 @@
 		9FB9B33627D1429000BBF35A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				9FBE401F27DB97ED0054B7A1 /* BookView.swift */,
-				9FB9B33827D1429000BBF35A /* ContentView.swift */,
-				9FBE401C27DB90D10054B7A1 /* ContentViewModel.swift */,
-				9FB9B33727D1429000BBF35A /* NativeBookLibraryApp.swift */,
-				9FB9B33927D1429100BBF35A /* Assets.xcassets */,
+				9F5221E227EDF53300B17E0F /* App */,
 				9FBE400E27DA9A130054B7A1 /* BarcodeScanner */,
 				9F62104A27E4CD00005F94BB /* Extension */,
+				9F4F76B727F1AF6000A20E48 /* Firebase */,
+				9F5221E327EDF53900B17E0F /* Helpers */,
 				9FBE400F27DB69A60054B7A1 /* Model */,
-				9FF3675E27E4DE96003FD5F2 /* Haptics.swift */,
+				9F5221E527EDF56500B17E0F /* Resources */,
+				9F5221E427EDF54200B17E0F /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -214,7 +301,7 @@
 				9FB9B37327D142EA00BBF35A /* GoogleService-Info.plist */,
 				9FBE401327DB80480054B7A1 /* BarcodeScannerView.swift */,
 				9FBE401627DB80790054B7A1 /* CameraPreview.swift */,
-				9FBE401927DB80F90054B7A1 /* ScannerCameraDelegate.swift */,
+				9F4F76C927F6DBC100A20E48 /* ScannerCameraDelegate.swift */,
 				9FBE400527DA76EB0054B7A1 /* ScannerView.swift */,
 				9FBE400827DA76F50054B7A1 /* ScannerViewModel.swift */,
 			);
@@ -249,6 +336,7 @@
 			packageProductDependencies = (
 				9FB9B37727D1450200BBF35A /* FirebaseAuth */,
 				9FB9B37927D1450200BBF35A /* FirebaseFirestore */,
+				9F4F76CC27F6DD2100A20E48 /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = "NativeBookLibrary (iOS)";
 			productReference = 9FB9B33E27D1429100BBF35A /* NativeBookLibrary.app */;
@@ -270,6 +358,7 @@
 			packageProductDependencies = (
 				9FB9B37C27D1455700BBF35A /* FirebaseAuth */,
 				9FB9B37E27D1455700BBF35A /* FirebaseFirestore */,
+				9F4F76CE27F6DD2900A20E48 /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = "NativeBookLibrary (macOS)";
 			productReference = 9FB9B34427D1429100BBF35A /* NativeBookLibrary.app */;
@@ -401,19 +490,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F5221EA27EE006A00B17E0F /* SignInWithAppleFirebase.swift in Sources */,
 				9FBE400627DA76EB0054B7A1 /* ScannerView.swift in Sources */,
 				9FBE401727DB80790054B7A1 /* CameraPreview.swift in Sources */,
 				9FB9B36127D1429100BBF35A /* ContentView.swift in Sources */,
+				9F4F76CA27F6DBC100A20E48 /* ScannerCameraDelegate.swift in Sources */,
 				9FB9B35F27D1429100BBF35A /* NativeBookLibraryApp.swift in Sources */,
-				9FBE401D27DB90D10054B7A1 /* ContentViewModel.swift in Sources */,
+				9F4F76C727F6142700A20E48 /* AppState.swift in Sources */,
+				9F4F76D427F7340500A20E48 /* Image.swift in Sources */,
+				9FBE401D27DB90D10054B7A1 /* LibraryViewModel.swift in Sources */,
 				9F62104C27E4CD0A005F94BB /* Color.swift in Sources */,
+				9F433BAE27E8C5FE00824A65 /* KeychainItem.swift in Sources */,
 				9FBE401427DB80480054B7A1 /* BarcodeScannerView.swift in Sources */,
+				9F5221E727EDF59F00B17E0F /* LibraryView.swift in Sources */,
 				9FF3675F27E4DE96003FD5F2 /* Haptics.swift in Sources */,
 				9FBE400C27DA98C60054B7A1 /* OnlineBook.swift in Sources */,
+				9F4F76C027F1B3C500A20E48 /* SignInView.swift in Sources */,
 				9FBE400927DA76F50054B7A1 /* ScannerViewModel.swift in Sources */,
 				9FBE401127DB69E90054B7A1 /* OnlineBooks.swift in Sources */,
+				9F4F76D127F7337600A20E48 /* SplashView.swift in Sources */,
+				9F4F76BD27F1AF8900A20E48 /* FirebaseUser.swift in Sources */,
 				9FBE402027DB97ED0054B7A1 /* BookView.swift in Sources */,
-				9FBE401A27DB80F90054B7A1 /* ScannerCameraDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,18 +518,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F5221EB27EE006A00B17E0F /* SignInWithAppleFirebase.swift in Sources */,
 				9FF3676027E4DE96003FD5F2 /* Haptics.swift in Sources */,
 				9FBE400727DA76EB0054B7A1 /* ScannerView.swift in Sources */,
 				9FBE401827DB80790054B7A1 /* CameraPreview.swift in Sources */,
+				9F4F76CB27F6DBC100A20E48 /* ScannerCameraDelegate.swift in Sources */,
 				9FB9B36227D1429100BBF35A /* ContentView.swift in Sources */,
+				9F4F76C827F6142700A20E48 /* AppState.swift in Sources */,
+				9F4F76D527F7340500A20E48 /* Image.swift in Sources */,
 				9FB9B36027D1429100BBF35A /* NativeBookLibraryApp.swift in Sources */,
-				9FBE401E27DB90D10054B7A1 /* ContentViewModel.swift in Sources */,
+				9F433BB627E9D55400824A65 /* Color.swift in Sources */,
+				9FBE401E27DB90D10054B7A1 /* LibraryViewModel.swift in Sources */,
 				9FBE401527DB80480054B7A1 /* BarcodeScannerView.swift in Sources */,
+				9F5221E827EDF59F00B17E0F /* LibraryView.swift in Sources */,
 				9FBE400D27DA98C60054B7A1 /* OnlineBook.swift in Sources */,
+				9F433BAF27E8C5FE00824A65 /* KeychainItem.swift in Sources */,
+				9F4F76C127F1B3C500A20E48 /* SignInView.swift in Sources */,
 				9FBE400A27DA76F50054B7A1 /* ScannerViewModel.swift in Sources */,
 				9FBE401227DB69E90054B7A1 /* OnlineBooks.swift in Sources */,
+				9F4F76D227F7337600A20E48 /* SplashView.swift in Sources */,
+				9F4F76BE27F1AF8900A20E48 /* FirebaseUser.swift in Sources */,
 				9FBE402127DB97ED0054B7A1 /* BookView.swift in Sources */,
-				9FBE401B27DB80F90054B7A1 /* ScannerCameraDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,16 +692,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NativeBookLibrary (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5337HLKKD5;
+				DEVELOPMENT_TEAM = BR5TD8Z784;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NativeBookLibrary--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Native Library";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Access requried to allow scanning of books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -618,16 +725,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NativeBookLibrary (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5337HLKKD5;
+				DEVELOPMENT_TEAM = BR5TD8Z784;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NativeBookLibrary--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Native Library";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Access requried to allow scanning of books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -656,7 +764,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5337HLKKD5;
+				DEVELOPMENT_TEAM = BR5TD8Z784;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -685,7 +793,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5337HLKKD5;
+				DEVELOPMENT_TEAM = BR5TD8Z784;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -867,6 +975,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9F4F76CC27F6DD2100A20E48 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FB9B37627D1450200BBF35A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		9F4F76CE27F6DD2900A20E48 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FB9B37627D1450200BBF35A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
 		9FB9B37727D1450200BBF35A /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9FB9B37627D1450200BBF35A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
