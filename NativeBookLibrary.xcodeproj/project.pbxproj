@@ -24,6 +24,10 @@
 		9F4F76D227F7337600A20E48 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D027F7337600A20E48 /* SplashView.swift */; };
 		9F4F76D427F7340500A20E48 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D327F7340500A20E48 /* Image.swift */; };
 		9F4F76D527F7340500A20E48 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D327F7340500A20E48 /* Image.swift */; };
+		9F4F76D727F7418100A20E48 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D627F7418100A20E48 /* BookViewModel.swift */; };
+		9F4F76D827F7418100A20E48 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D627F7418100A20E48 /* BookViewModel.swift */; };
+		9F4F76DA27F7465F00A20E48 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D927F7465F00A20E48 /* Book.swift */; };
+		9F4F76DB27F7465F00A20E48 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F76D927F7465F00A20E48 /* Book.swift */; };
 		9F5221E727EDF59F00B17E0F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5221E627EDF59F00B17E0F /* LibraryView.swift */; };
 		9F5221E827EDF59F00B17E0F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5221E627EDF59F00B17E0F /* LibraryView.swift */; };
 		9F5221EA27EE006A00B17E0F /* SignInWithAppleFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5221E927EE006900B17E0F /* SignInWithAppleFirebase.swift */; };
@@ -91,6 +95,8 @@
 		9F4F76C927F6DBC100A20E48 /* ScannerCameraDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerCameraDelegate.swift; sourceTree = "<group>"; };
 		9F4F76D027F7337600A20E48 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		9F4F76D327F7340500A20E48 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		9F4F76D627F7418100A20E48 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		9F4F76D927F7465F00A20E48 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		9F5221E627EDF59F00B17E0F /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		9F5221E927EE006900B17E0F /* SignInWithAppleFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleFirebase.swift; sourceTree = "<group>"; };
 		9F62104B27E4CD0A005F94BB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -196,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				9FBE401F27DB97ED0054B7A1 /* BookView.swift */,
+				9F4F76D627F7418100A20E48 /* BookViewModel.swift */,
 				9FB9B33827D1429000BBF35A /* ContentView.swift */,
 				9F5221E627EDF59F00B17E0F /* LibraryView.swift */,
 				9FBE401C27DB90D10054B7A1 /* LibraryViewModel.swift */,
@@ -311,6 +318,7 @@
 		9FBE400F27DB69A60054B7A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9F4F76D927F7465F00A20E48 /* Book.swift */,
 				9FBE400B27DA98C60054B7A1 /* OnlineBook.swift */,
 				9FBE401027DB69E90054B7A1 /* OnlineBooks.swift */,
 			);
@@ -495,8 +503,10 @@
 				9FBE401727DB80790054B7A1 /* CameraPreview.swift in Sources */,
 				9FB9B36127D1429100BBF35A /* ContentView.swift in Sources */,
 				9F4F76CA27F6DBC100A20E48 /* ScannerCameraDelegate.swift in Sources */,
+				9F4F76D727F7418100A20E48 /* BookViewModel.swift in Sources */,
 				9FB9B35F27D1429100BBF35A /* NativeBookLibraryApp.swift in Sources */,
 				9F4F76C727F6142700A20E48 /* AppState.swift in Sources */,
+				9F4F76DA27F7465F00A20E48 /* Book.swift in Sources */,
 				9F4F76D427F7340500A20E48 /* Image.swift in Sources */,
 				9FBE401D27DB90D10054B7A1 /* LibraryViewModel.swift in Sources */,
 				9F62104C27E4CD0A005F94BB /* Color.swift in Sources */,
@@ -523,8 +533,10 @@
 				9FBE400727DA76EB0054B7A1 /* ScannerView.swift in Sources */,
 				9FBE401827DB80790054B7A1 /* CameraPreview.swift in Sources */,
 				9F4F76CB27F6DBC100A20E48 /* ScannerCameraDelegate.swift in Sources */,
+				9F4F76D827F7418100A20E48 /* BookViewModel.swift in Sources */,
 				9FB9B36227D1429100BBF35A /* ContentView.swift in Sources */,
 				9F4F76C827F6142700A20E48 /* AppState.swift in Sources */,
+				9F4F76DB27F7465F00A20E48 /* Book.swift in Sources */,
 				9F4F76D527F7340500A20E48 /* Image.swift in Sources */,
 				9FB9B36027D1429100BBF35A /* NativeBookLibraryApp.swift in Sources */,
 				9F433BB627E9D55400824A65 /* Color.swift in Sources */,

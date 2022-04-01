@@ -29,9 +29,7 @@ struct LibraryView: View {
 
                 Spacer()
 
-                profileView(name: appState.user?.displayName) {
-                    // Show user profile / sign out
-                }
+                profileView(name: appState.user?.displayName)
             }
 
             Spacer()
@@ -45,18 +43,28 @@ struct LibraryView: View {
             ScannerView(showScanner: $showScanner, scannedValue: $viewModel.scannedValue)
         }
         .sheet(item: $viewModel.selectedBook) { book in
-            BookView(book: book)
+            BookView(book: book, state: isAddingBook ? .adding : .checkingIn)
         }
     }
 
     private var library: some View {
-        Text("The library is currently awaiting stock")
-            .font(.title)
-            .foregroundColor(.gray)
-            .multilineTextAlignment(.center)
+        VStack {
+            if appState.books.count > 0 {
+                ForEach(appState.books) { book in
+                    Text(book.title)
+                }
+
+                Spacer()
+            } else {
+                Text("The library is currently awaiting stock")
+                    .font(.title)
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+            }
+        }
     }
 
-    private func profileView(name: String?, _ tapped: (() -> Void)? = nil) -> some View {
+    private func profileView(name: String?) -> some View {
         let initial: String
 
         if name == nil || name!.isEmpty || name == "Unknown" {

@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 class AppState: ObservableObject {
     @Published var stage: Stage = .splash
     @Published var user: FirebaseUser?
+    @Published var books: [Book] = []
 
     init() {
         SignInWithAppleFirebase.checkForExistingUser() { [weak self] user in
@@ -45,6 +46,24 @@ class AppState: ObservableObject {
                     self.stage = .signIn
                 }
             }
+
+        Firestore.firestore().collection(Constants.bookCollection)
+            .addSnapshotListener { [weak self] snapshot, error in
+                guard let self = self else { return }
+
+                if let error = error {
+                    self.stage = .signIn
+                    print("⛔️ Could not find books snapshot: \(error)"); return
+                }
+
+                do {
+                    self.books = try snapshot?.documents.compactMap({ snapshot in
+                        try snapshot.data(as: Book.self)
+                    }) ?? []
+                } catch {
+                    print("⛔️ \(error)")
+                }
+            }
     }
 
     /// Sign the user out of Apple and Firebase.
@@ -63,6 +82,7 @@ class AppState: ObservableObject {
 
     // MARK: - Constants
     private enum Constants {
+        static let bookCollection = "books"
         static let userCollection = "users"
     }
 }

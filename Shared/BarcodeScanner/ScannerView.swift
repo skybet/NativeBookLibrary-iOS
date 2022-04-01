@@ -57,7 +57,7 @@ struct ScannerView: View {
                 Label("Confirm", systemImage: "checkmark")
                     .foregroundColor(.white)
                     .opacity(viewModel.lastScannedBarcode.isEmpty ? 0.7 : 1)
-                    .frame(minHeight: 44)
+                    .frame(maxWidth: .infinity, minHeight: 44)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 5)
                     .background(

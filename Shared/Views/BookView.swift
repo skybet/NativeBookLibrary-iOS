@@ -9,6 +9,11 @@ import SwiftUI
 
 struct BookView: View {
     let book: OnlineBook
+    let state: BookViewState
+
+    @StateObject private var viewModel = BookViewModel()
+
+    @Environment(\.presentationMode) private var presentationMode
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -41,13 +46,51 @@ struct BookView: View {
             }
 
             Spacer()
+
+            Button(action: {
+                switch state {
+                case .adding:
+                    viewModel.addBook(book)
+                case .checkingIn, .checkoutOut:
+                    break
+                }
+
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Label(state.buttonText, systemImage: "checkmark")
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity, minHeight: 44)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 5)
+                    .background(
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(Color.barcodeFinderFound)
+                    )
+            })
         }
         .padding()
+    }
+
+    enum BookViewState {
+        case adding
+        case checkingIn
+        case checkoutOut
+
+        var buttonText: String {
+            switch self {
+            case .adding:
+                return "Add to Library"
+            case .checkingIn:
+                return "Check In"
+            case .checkoutOut:
+                return "Check Out"
+            }
+        }
     }
 }
 
 struct BookView_Previews: PreviewProvider {
     static var previews: some View {
-        BookView(book: OnlineBook.sample)
+        BookView(book: OnlineBook.sample, state: .adding)
     }
 }
